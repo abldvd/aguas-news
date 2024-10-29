@@ -1,9 +1,8 @@
-FROM python:3.8-slim
+FROM python:3.6-slim
 
 WORKDIR /usr/src/app
 
-COPY requirements.txt .
-RUN pip install --no-cache-dir pygooglenews 
+RUN pip install --no-cache-dir feedparser feedsearch
 
 COPY script.py .
 
