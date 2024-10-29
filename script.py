@@ -1,5 +1,9 @@
-from newscollector import *
+from pygooglenews import GoogleNews
 
-newsletter = NewsCollector()
+gn = GoogleNews(country='ES')
 
-output = newsletter.create()
+search = gn.search('CIAGC')
+
+for new in search["entries"]:
+    print(new["published"])
+
