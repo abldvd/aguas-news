@@ -2,7 +2,9 @@ FROM python:3.6-slim
 
 WORKDIR /usr/src/app
 
-RUN pip install --no-cache-dir feedparser feedsearch
+COPY requirements.txt .
+
+RUN pip install --no-cache-dir -r requirements.txt
 
 COPY script.py .
 
