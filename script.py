@@ -10,6 +10,10 @@ from email.mime.text import MIMEText
 news_feed = feedparser.parse(os.getenv("NEWS_SEARCH"))
 fecha_desde = datetime.today() - timedelta(days=14)
 
+if not news_feed.entries:
+    print("No se han encontrado noticias.")
+    exit()
+
 #Extraer excel existente
 excel_file = './output/news.xlsx'
 try:
