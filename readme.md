@@ -1,4 +1,3 @@
-
 # Aguas News Scraper
 
 Este proyecto es una herramienta automatizada para obtener noticias relacionadas con el "Consejo Insular de Aguas de Gran Canaria" de Google News. El script se ejecuta de forma periódica para obtener noticias relevantes, almacenarlas en un archivo Excel y enviarlas por correo electrónico.
@@ -15,7 +14,7 @@ Este proyecto es una herramienta automatizada para obtener noticias relacionadas
 Clona este repositorio en tu servidor o máquina local:
 
 ```bash
-git clone https://github.com/tu-usuario/aguas-news-scraper.git
+git clone https://github.com/tu-usuario/aguas-news.git
 cd aguas-news-scraper
 ```
 
