@@ -22,4 +22,4 @@ fi
 
 # Ejecutar el contenedor con el volumen montado
 echo "Obteniendo noticias......"
-docker run --rm -v "$(pwd)/output":/usr/src/app/output $IMAGE_NAME
+docker run --rm --env-file .env -v "$(pwd)/output":/usr/src/app/output $IMAGE_NAME
