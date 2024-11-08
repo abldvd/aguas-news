@@ -68,7 +68,6 @@ Este proyecto está diseñado para ejecutarse automáticamente cada semana. Pued
 
    ```
    crontab -e
-
    ```
    Añade la siguiente línea para que el script se ejecute todos los lunes a las 8:00 AM:
 
